@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Laboratory 1",
+        "due": "15-12-2021",
+        "desc": "Complete the Lab 1 before or on the given due date. Session will be held for doubts."
+    },
+    {
+        "id": 2,
+        "name": "Laboratory 2",
+        "due": "22-12-2021",
+        "desc": "Complete the Lab 2 before or on the given due date. Session will be held for doubts."
+    },
+    {
+        "id": 3,
+        "name": "Laboratory 3",
+        "due": "30-12-2021",
+        "desc": "Complete the Lab 3 before or on the given due date. Session will be held for doubts."
+    },
+    {
+        "id": 4,
+        "name": "Laboratory 4",
+        "due": "7-1-2022",
+        "desc": "Complete the Lab 4 before or on the given due date. Session will be held for doubts."
+    },
+    {
+        "id": 5,
+        "name": "Laboratory 5",
+        "due": "14-1-2022",
+        "desc": "Complete the Lab 5 before or on the given due date. Session will be held for doubts."
+    },
+    {
+        "id": 6,
+        "name": "Laboratory 6",
+        "due": "21-1-2022",
+        "desc": "Complete the Lab 6 before or on the given due date. Session will be held for doubts."
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Tutorial 1",
+        "due": "15-12-2021",
+        "desc": "Complete the tutorial 1 before or on the given due date. Question 3 is optional."
+    },
+    {
+        "id": 2,
+        "name": "Tutorial 2",
+        "due": "22-12-2021",
+        "desc": "Complete the tutorial 2 before or on the given due date. Question 2 is optional."
+    },
+    {
+        "id": 3,
+        "name": "Tutorial 3",
+        "due": "30-12-2021",
+        "desc": "Complete the tutorial 3 before or on the given due date. Question 1 is optional."
+    },
+    {
+        "id": 4,
+        "name": "Tutorial 4",
+        "due": "7-1-2022",
+        "desc": "Complete the tutorial 4 before or on the given due date. All questions are compulasory."
+    },
+    {
+        "id": 5,
+        "name": "Tutorial 5",
+        "due": "14-1-2022",
+        "desc": "Complete the tutorial 5 before or on the given due date. Question 3 is optional."
+    },
+    {
+        "id": 6,
+        "name": "Tutorial 6",
+        "due": "21-1-2022",
+        "desc": "Complete the tutorial 6 before or on the given due date. All questions are compulasory."
+    }
+]
