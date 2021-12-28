@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:imsystem/faculty/faculty_homepage.dart';
 import 'package:imsystem/faculty/your_course.dart';
 import 'package:imsystem/homepage.dart';
+import 'package:imsystem/models/user_details.dart';
 
 import 'courses.dart';
 
@@ -159,53 +160,65 @@ class _LoginState extends State<Login> {
                           ),
                           Builder(
                             builder: (context) => Center(
-                                child: RaisedButton(
-                                    child: Text("Register"),
-                                    color: Colors.blue,
-                                    textColor: Colors.white,
-                                    onPressed: () {
-                                      if (formKey.currentState!.validate()) {
-                                        print("Validated");
-                                        _id += 1;
-                                        bool checker = false;
-                                        for (var i = 0;
-                                            i < widget.detailsOfUser.length;
-                                            i++) {
-                                          if (widget.detailsOfUser[i].email.text ==
-                                                  _emailController.text &&
-                                              widget.detailsOfUser[i].password.text ==
-                                                  _passwordController.text) {
-                                            checker = true;
-                                            break;
-                                          }
-                                        }
-                                        if (checker) {
-                                          if (type == "Faculty") {
-                                            //
+                                child: Column(
+                                  children: [
+                                    RaisedButton(
+                                        child: Text("Register"),
+                                        color: Colors.blue,
+                                        textColor: Colors.white,
+                                        onPressed: () {
+                                          if (formKey.currentState!.validate()) {
+                                            print("Validated");
+                                            _id += 1;
+                                            bool checker = false;
+                                            for (var i = 0;
+                                                i < widget.detailsOfUser.length;
+                                                i++) {
+                                              if (widget.detailsOfUser[i].email.text ==
+                                                      _emailController.text &&
+                                                  widget.detailsOfUser[i].password.text ==
+                                                      _passwordController.text) {
+                                                checker = true;
+                                                break;
+                                              }
+                                            }
+                                            if (checker) {
+                                              if (type == "Faculty") {
+                                                //
 
-                                            Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      HomeFaculty(
-                                                          widget.detailsOfUser)),
-                                            );
-                                          } else if (type == "Student") {
-                                            //
-                                            Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      Home(widget.detailsOfUser)),
-                                            );
+                                                Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          HomeFaculty(
+                                                              widget.detailsOfUser)),
+                                                );
+                                              } else if (type == "Student") {
+                                                //
+                                                Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          Home(widget.detailsOfUser)),
+                                                );
+                                              }
+                                            } else {
+                                              print("Incorrect Password or ID");
+                                            }
+                                          } else {
+                                            print("Not Validated");
                                           }
-                                        } else {
-                                          print("Incorrect Password or ID");
-                                        }
-                                      } else {
-                                        print("Not Validated");
-                                      }
-                                    })),
+                                        }),
+                                        RaisedButton(
+                                          child: Text("Just move to the main page please"),
+                                          onPressed: (){
+                                            Navigator.push(context, 
+                                            MaterialPageRoute(builder: (context) => Home([]))
+                                            ); 
+                                          }
+                                        )
+                                  ],
+                                )),
                           ),
                         ],
                       )),

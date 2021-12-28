@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:imsystem/register.dart';
 import '../homepage.dart';
 import '../login.dart';
+import '../grading_page.dart';
 import '../models/user_details.dart';
 
 class DrawerWidget extends StatelessWidget {
@@ -85,7 +86,14 @@ class DrawerWidget extends StatelessWidget {
                       ),
                     )),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GradingPage()
+                        ),
+                      );
+                    },
                     child: Text(
                       "GRADING",
                       style: TextStyle(
