@@ -4,6 +4,7 @@ import '../homepage.dart';
 import '../login.dart';
 import '../grading_page.dart';
 import '../models/user_details.dart';
+import 'package:imsystem/library.dart';
 
 class DrawerWidget extends StatelessWidget {
   @override
@@ -96,6 +97,21 @@ class DrawerWidget extends StatelessWidget {
                     },
                     child: Text(
                       "GRADING",
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
+                    )),
+                TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => lauchUrlDemo()
+                        ),
+                      );
+                    },
+                    child: Text(
+                      "LIBRARY",
                       style: TextStyle(
                         fontSize: 16,
                       ),
