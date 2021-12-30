@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:imsystem/clubs/gymkhana.dart';
 import 'package:imsystem/register.dart';
 import '../homepage.dart';
 import '../login.dart';
@@ -125,7 +126,12 @@ class DrawerWidget extends StatelessWidget {
                       ),
                     )),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Gymkhana()),
+                      );
+                    },
                     child: Text(
                       "CLUBS",
                       style: TextStyle(
