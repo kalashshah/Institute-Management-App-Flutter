@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:imsystem/announcements/main_page.dart';
 import 'package:imsystem/clubs/gymkhana.dart';
 import 'package:imsystem/register.dart';
 import '../homepage.dart';
@@ -94,7 +95,13 @@ class DrawerWidget extends StatelessWidget {
                       ),
                     )),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => MainAnnouncemnt()),
+                      );
+                    },
                     child: Text(
                       "ANNOUNCEMENTS",
                       style: TextStyle(
