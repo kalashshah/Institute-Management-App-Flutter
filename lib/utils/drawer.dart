@@ -4,7 +4,9 @@ import 'package:imsystem/clubs/gymkhana.dart';
 import 'package:imsystem/register.dart';
 import '../homepage.dart';
 import '../login.dart';
+import '../grading_page.dart';
 import '../models/user_details.dart';
+import 'package:imsystem/library.dart';
 
 class DrawerWidget extends StatelessWidget {
   @override
@@ -87,7 +89,14 @@ class DrawerWidget extends StatelessWidget {
                       ),
                     )),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GradingPage(detailsOfUser)
+                        ),
+                      );
+                    },
                     child: Text(
                       "GRADING",
                       style: TextStyle(

@@ -83,7 +83,8 @@ class Coursepages extends StatelessWidget {
                                       ],
                                     )
                                   ],
-                                )),
+                                )
+                            ),
                           ],
                         )
                       ],
