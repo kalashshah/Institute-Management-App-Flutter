@@ -156,7 +156,7 @@ class Grade {
   int _total;
   int _marks;
   int _average;
-  double _percentage;
+  final double _percentage;
 
   int getTotal() {
     return _total;
@@ -184,10 +184,6 @@ class Grade {
 
   void setAverage(int average) {
     _average = average;
-  }
-
-  void setPercentage(double percentage) {
-    _percentage = percentage;
   }
 
   Grade(this._marks, this._total, this._average)

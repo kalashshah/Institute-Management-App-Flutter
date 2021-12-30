@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:imsystem/utils/grading_data.dart';
+import 'add_exam_page.dart';
 import 'exam_page.dart';
 import 'models/grade.dart';
 
@@ -35,7 +36,8 @@ class GradingCard extends StatelessWidget {
 }
 
 class GradingPage extends StatelessWidget {
-  const GradingPage({Key? key}) : super(key: key);
+  var detailsOfUser = [];
+  GradingPage(this.detailsOfUser, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -55,6 +57,17 @@ class GradingPage extends StatelessWidget {
                   exam.getCourse(),
                 ))
             .toList(),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => AddExamPage(),
+            ),
+          );
+        },
+        child: Icon(Icons.add),
       ),
     );
   }

@@ -91,7 +91,7 @@ class DrawerWidget extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => GradingPage()
+                          builder: (context) => GradingPage(detailsOfUser)
                         ),
                       );
                     },
