@@ -315,7 +315,7 @@ class Courses extends StatelessWidget {
                                       MaterialPageRoute(
                                           builder: (context) => Coursepages(
                                               "assets/images/algoBack.jpeg",
-                                              "Dr. Jaishree Matank",
+                                              "Dr. Jaishree Mayank",
                                               "jaishree_m@iiitvadodara.ac.in",
                                               "http://meet.google.com/pex-xbya-rvk",
                                               courses.algoAssgn,

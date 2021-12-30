@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:imsystem/announcements/main_page.dart';
+import 'package:imsystem/clubs/gymkhana.dart';
 import 'package:imsystem/register.dart';
 import '../homepage.dart';
 import '../login.dart';
@@ -106,18 +108,9 @@ class DrawerWidget extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => lauchUrlDemo()
-                        ),
+                            builder: (context) => MainAnnouncemnt()),
                       );
                     },
-                    child: Text(
-                      "LIBRARY",
-                      style: TextStyle(
-                        fontSize: 16,
-                      ),
-                    )),
-                TextButton(
-                    onPressed: () {},
                     child: Text(
                       "ANNOUNCEMENTS",
                       style: TextStyle(
@@ -149,7 +142,12 @@ class DrawerWidget extends StatelessWidget {
                       ),
                     )),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Gymkhana()),
+                      );
+                    },
                     child: Text(
                       "CLUBS",
                       style: TextStyle(
