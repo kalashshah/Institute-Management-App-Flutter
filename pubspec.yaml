@@ -35,6 +35,9 @@ dependencies:
   path_provider: ^2.0.7
   url_launcher: ^6.0.17
   carousel_slider: ^4.0.0
+  intl: ^0.17.0
+  syncfusion_flutter_calendar: ^19.4.40
+  provider: ^6.0.2
 
 
 

@@ -53,7 +53,7 @@ class Courses {
 }
 
 class _StudentTimeTableSet extends State<StudentTimeTablePage> {
-  bool created = false; 
+  bool created = false;
 
   @override
   Widget build(BuildContext context) {
@@ -135,42 +135,66 @@ class _StudentTimeTableSet extends State<StudentTimeTablePage> {
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.bold)),
                             ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[0],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[1],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[2],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[3],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[4],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[5],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ])                        
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[0],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[1],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[2],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[3],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[4],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[5],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ])
                           ],
                         ),
                         TableRow(
@@ -182,42 +206,66 @@ class _StudentTimeTableSet extends State<StudentTimeTablePage> {
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.bold)),
                             ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[6],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[7],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[8],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[9],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[10],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[11],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ])                        
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[6],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[7],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[8],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[9],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[10],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[11],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ])
                           ],
                         ),
                         TableRow(
@@ -229,42 +277,66 @@ class _StudentTimeTableSet extends State<StudentTimeTablePage> {
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.bold)),
                             ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[12],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[13],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[14],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[15],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[16],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[17],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ])                        
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[12],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[13],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[14],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[15],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[16],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[17],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ])
                           ],
                         ),
                         TableRow(
@@ -276,42 +348,66 @@ class _StudentTimeTableSet extends State<StudentTimeTablePage> {
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.bold)),
                             ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[18],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[19],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[20],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[21],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[22],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[23],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ])                        
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[18],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[19],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[20],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[21],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[22],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[23],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ])
                           ],
                         ),
                         TableRow(
@@ -323,44 +419,68 @@ class _StudentTimeTableSet extends State<StudentTimeTablePage> {
                                       fontSize: 20.0,
                                       fontWeight: FontWeight.bold)),
                             ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[24],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[25],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[26],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[27],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[28],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ]),
-                            widget.assgnList.isEmpty ? Center(child: Text("Nothing"),) : Column(children: [
-                              Text(widget.assgnList[29],
-                                  style: TextStyle(
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold)),
-                            ])                        
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[24],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[25],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[26],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[27],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[28],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ]),
+                            widget.assgnList.isEmpty
+                                ? Center(
+                                    child: Text("Nothing"),
+                                  )
+                                : Column(children: [
+                                    Text(widget.assgnList[29],
+                                        style: TextStyle(
+                                            fontSize: 20.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ])
                           ],
-                        ),                        
+                        ),
                       ])
                 ],
               )

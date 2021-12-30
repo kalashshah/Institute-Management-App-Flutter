@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:imsystem/announcements/main_page.dart';
 import 'package:imsystem/clubs/gymkhana.dart';
+import 'package:imsystem/hostel.dart';
 import 'package:imsystem/register.dart';
+import 'package:imsystem/timetable/models/tt.dart';
+import 'package:imsystem/timetable/pages/student_timetable.dart';
 import '../homepage.dart';
 import '../login.dart';
 import '../grading_page.dart';
@@ -93,8 +96,7 @@ class DrawerWidget extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => GradingPage(detailsOfUser)
-                        ),
+                            builder: (context) => GradingPage(detailsOfUser)),
                       );
                     },
                     child: Text(
@@ -126,17 +128,14 @@ class DrawerWidget extends StatelessWidget {
                       ),
                     )),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Hostel()),
+                      );
+                    },
                     child: Text(
                       "HOSTEL",
-                      style: TextStyle(
-                        fontSize: 16,
-                      ),
-                    )),
-                TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      "CALENDAR",
                       style: TextStyle(
                         fontSize: 16,
                       ),
@@ -155,9 +154,29 @@ class DrawerWidget extends StatelessWidget {
                       ),
                     )),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                StudentTimeTablePage(tableData)),
+                      );
+                    },
                     child: Text(
                       "TIME TABLE",
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
+                    )),
+                TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => lauchUrlDemo()),
+                      );
+                    },
+                    child: Text(
+                      "LIBRARY",
                       style: TextStyle(
                         fontSize: 16,
                       ),

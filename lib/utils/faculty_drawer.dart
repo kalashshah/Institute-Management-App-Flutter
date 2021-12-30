@@ -3,6 +3,7 @@ import 'package:imsystem/announcements/faculty_add.dart';
 import 'package:imsystem/faculty/faculty_homepage.dart';
 import 'package:imsystem/models/user_details.dart';
 import 'package:imsystem/register.dart';
+import 'package:imsystem/timetable/pages/faculty_timetable_create.dart';
 
 import '../login.dart';
 
@@ -100,6 +101,20 @@ class FacultyDrawer extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
+                                builder: (context) => FacultyTimeTablePage()),
+                          );
+                        },
+                        child: Text(
+                          "Time Table",
+                          style: TextStyle(
+                            fontSize: 16,
+                          ),
+                        )),
+                    TextButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
                                 builder: (context) => FacultyAnnouncement()),
                           );
                         },
@@ -117,14 +132,14 @@ class FacultyDrawer extends StatelessWidget {
                             fontSize: 16,
                           ),
                         )),
-                    TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "Calendar",
-                          style: TextStyle(
-                            fontSize: 16,
-                          ),
-                        )),
+                    // TextButton(
+                    //     onPressed: () {},
+                    //     child: Text(
+                    //       "Calendar",
+                    //       style: TextStyle(
+                    //         fontSize: 16,
+                    //       ),
+                    //     )),
                   ],
                 ),
                 Row(
