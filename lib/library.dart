@@ -20,7 +20,7 @@ class _launchUrlDemoState extends State<lauchUrlDemo>{
   String _launchUrl3 = 'https://prakashgautam.com.np/dipit02/books/rps-michael-byron.pdf';
   String _launchUrl4 = 'https://www.math.ucdavis.edu/~linear/linear-guest.pdf';
 
-  Future<void> _launchInBrowser(String url) async{
+  Future<void> _launchInBrowser(String url) async {
     if(await canLaunch(url)){
       await launch(
         url,
