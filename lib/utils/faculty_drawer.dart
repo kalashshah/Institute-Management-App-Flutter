@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:imsystem/announcements/faculty_add.dart';
+import 'package:imsystem/attendance/attendance.dart';
 import 'package:imsystem/faculty/faculty_homepage.dart';
 import 'package:imsystem/models/user_details.dart';
 import 'package:imsystem/register.dart';
@@ -125,7 +126,13 @@ class FacultyDrawer extends StatelessWidget {
                           ),
                         )),
                     TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Attendance()),
+                          );
+                        },
                         child: Text(
                           "Attendance",
                           style: TextStyle(
